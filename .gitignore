@@ -1,0 +1,7 @@
+# temporary/bytecode files
+*~
+.*.swp
+*.pyc
+*.pyo
+opt/
+

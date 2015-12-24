@@ -1,0 +1,29 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=latex 2015.12.9)  11 DEC 2015 10:20
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**collectbox.ins
+(./collectbox.ins
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, lo
+aded.
+! I can't find file `ydocstrip.tex'.
+l.1 \input ydocstrip.tex
+                        
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: 
+! Emergency stop.
+l.1 \input ydocstrip.tex
+                        
+End of file on the terminal!
+
+ 
+Here is how much of TeX's memory you used:
+ 7 strings out of 495064
+ 151 string characters out of 3182224
+ 45057 words of memory out of 3000000
+ 3288 multiletter control sequences out of 15000+200000
+ 3640 words of font info for 14 fonts, out of 3000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 5i,0n,3p,37b,8s stack positions out of 5000i,500n,10000p,200000b,50000s
+No pages of output.
