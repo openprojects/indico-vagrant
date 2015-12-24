@@ -85,4 +85,6 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", path: "manifests/install_packages.sh"
 
 
+  # Start services
+  config.vm.provision "shell", path: "manifests/start_services.sh"
 end
