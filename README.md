@@ -1,6 +1,8 @@
 Indico's Vagrant script
 =======================
 
+This code will create a new Centos 7 VM with latest Indico installation.
+
 Lauch the Vagrant script with "vagrant up".
 
 When finished, just run:
