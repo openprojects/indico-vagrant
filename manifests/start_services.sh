@@ -16,7 +16,8 @@ cd /vagrant/opt/indico-src
 sudo zdaemon -C etc/zdctl.conf start
 sudo indico db prepare
 
-#sudo indico runserver
+# Give Vagrant user I/O permissions 
+chown -R vagrant /opt/indico
 
 #cp /vagrant/apache_indico.conf /etc/httpd/conf.d/
 #service httpd restart
