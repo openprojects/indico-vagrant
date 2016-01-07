@@ -5,7 +5,7 @@ This code will create a new Centos 7 VM with latest Indico installation.
 
 
 Requirements
-============
+------------
 
 - Download and Install Vagrant on your Host machine:  https://www.vagrantup.com/downloads.html
 
