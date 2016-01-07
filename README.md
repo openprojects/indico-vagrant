@@ -27,7 +27,7 @@ Requirements
 
 - When finished, just run:
 ```
-  vagrant ssh -c "/usr/bin/indico runserver"
+  $ vagrant ssh -c "/usr/bin/indico runserver"
 ```
 
 - Now open your browser an point to the URL: http://0.0.0.0:8080
