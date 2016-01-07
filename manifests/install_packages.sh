@@ -49,6 +49,6 @@ sudo pip install -r requirements.dev.txt
 sudo fab setup_deps
 echo "/opt/indico" | sudo python setup.py develop_config
 sudo yes | cp /vagrant/confs/etc/indico.conf /vagrant/opt/indico-src/etc/
-
+sudo yes | cp /usr/bin/indico /vagrant/opt/
 
 
