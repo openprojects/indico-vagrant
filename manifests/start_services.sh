@@ -19,7 +19,7 @@ OLD="SecretKey = ''"
 SECRET=$(cat /dev/urandom | env LC_CTYPE=C tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1)
 NEW="SecretKey = '$SECRET'"
 DPATH="etc/indico.conf"
-sed -i .bak "s/$OLD/$NEW/g" $DPATH
+sed -i.bak "s/$OLD/$NEW/g" $DPATH
 
 # start Indico
 sudo zdaemon -C etc/zdctl.conf start
