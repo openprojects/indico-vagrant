@@ -31,3 +31,12 @@ Requirements
 ```
 
 - Now open your browser an point to the URL: http://0.0.0.0:8080
+
+
+Fake SMTP server for debugging
+------------------------------
+
+Open a new shell, cd into indico-vagrant folder and
+```
+  $ vagrant ssh -c "python -m smtpd -n -c DebuggingServer localhost:8025"
+```
