@@ -13,7 +13,7 @@ Requirements
 
 - Download and Install VirtualBox Extension Pack (same above URL)
 
-- Create a folder in you Host machine and: 
+- Create a folder in your Host machine and: 
 ```
   $ git clone https://github.com/openprojects/indico-vagrant.git
 ```
