@@ -40,3 +40,15 @@ Open a new shell, cd into indico-vagrant folder and
 ```
   $ vagrant ssh -c "python -m smtpd -n -c DebuggingServer localhost:8025"
 ```
+
+pgAdmin access
+------------------------------
+
+Create a new DB connection with
+```
+  Name: indico-vagrant
+  Host: 0.0.0.0
+  Port: 5433
+  Username: root
+  no password needed
+```
