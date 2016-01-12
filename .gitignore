@@ -4,4 +4,4 @@
 *.pyc
 *.pyo
 opt/
-
+.vagrant

@@ -25,6 +25,7 @@ sed -i.bak "s/$OLD/$NEW/g" $DPATH
 sudo zdaemon -C etc/zdctl.conf start
 sudo indico db prepare
 
+
 # Give Vagrant user I/O permissions 
 chown -R vagrant /opt/indico
 

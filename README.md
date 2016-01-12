@@ -27,7 +27,7 @@ Requirements
 
 - When finished, just run:
 ```
-  $ vagrant ssh -c "/usr/bin/indico runserver"
+  $ vagrant ssh -c "/vagrant/opt/run_indico.sh"
 ```
 
 - Now open your browser an point to the URL: http://0.0.0.0:8080
@@ -40,6 +40,24 @@ Open a new shell, cd into indico-vagrant folder and
 ```
   $ vagrant ssh -c "python -m smtpd -n -c DebuggingServer localhost:8025"
 ```
+
+
+Start Indico
+-------------------
+
+```
+  $ vagrant ssh -c "/vagrant/opt/run_indico.sh"
+```
+
+
+Stop/start vagrant VM
+---------------------
+
+```
+    $ vagrant halt
+    $ vagrant up
+```
+
 
 pgAdmin access
 ------------------------------
