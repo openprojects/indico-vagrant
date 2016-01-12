@@ -19,7 +19,7 @@ Vagrant.configure("2") do |config|
   
   config.vm.provider "virtualbox" do |vb|
         vb.customize ["modifyvm", :id, "--memory", "1024"]
-        vb.customize ["modifyvm", :id, "--name", "indico-dev5" ]
+        vb.customize ["modifyvm", :id, "--name", "indico-dev1" ]
   end
 
   #config.vm.network "public_network"
