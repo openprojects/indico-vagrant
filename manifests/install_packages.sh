@@ -44,11 +44,19 @@ sudo yum -y install httpd httpd-devel
 #sudo pip install maildump
 #sudo pip install --upgrade webassets
 
+
+# Install and setup VirtualEnv
+sudo pip install virtualenv
+virtualenv /vagrant/opt
+
 # Download latest Indico from github
 sudo git clone https://github.com/indico/indico.git /vagrant/opt/indico-src
 
 sudo git config --global url.https://github.com/.insteadOf git://github.com/
 cd /vagrant/opt/indico-src
+
+# start virtualenv
+source ../bin/activate
 
 # Install Indico's requirements and deps
 sudo env "PATH=$PATH" pip install -r requirements.txt

@@ -21,9 +21,15 @@ NEW="SecretKey = '$SECRET'"
 DPATH="etc/indico.conf"
 sed -i.bak "s/$OLD/$NEW/g" $DPATH
 
-# start Indico
+# First time start Indico: Init Postgresql DB
 sudo zdaemon -C etc/zdctl.conf start
 sudo indico db prepare
+sudo zdaemon -C etc/zdctl.conf stop
+
+
+# deactivate virtualenv
+deactivate
+
 
 
 # Give Vagrant user I/O permissions 
