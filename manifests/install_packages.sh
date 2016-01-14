@@ -13,6 +13,14 @@ sudo yum -y install python-pip
 # Upgrade pip
 sudo pip install --upgrade pip
 
+# Install and setup VirtualEnv
+sudo pip install virtualenv
+virtualenv /vagrant/opt
+
+# start virtualenv
+source ../bin/activate
+
+
 # Install Celery and Redis bundle
 sudo pip install -U celery[redis]
 
@@ -45,20 +53,14 @@ sudo yum -y install httpd httpd-devel
 #sudo pip install --upgrade webassets
 
 
-# Install and setup VirtualEnv
-sudo pip install virtualenv
-virtualenv /vagrant/opt
-
 # Download latest Indico from github
 sudo git clone https://github.com/indico/indico.git /vagrant/opt/indico-src
 
 sudo git config --global url.https://github.com/.insteadOf git://github.com/
 cd /vagrant/opt/indico-src
 
-# start virtualenv
-source ../bin/activate
-
 # Install Indico's requirements and deps
+sudo pip install requests
 sudo env "PATH=$PATH" pip install -r requirements.txt
 sudo pip install -r requirements.dev.txt
 
