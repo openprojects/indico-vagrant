@@ -5,3 +5,4 @@
 *.pyo
 opt/
 .vagrant
+.idea

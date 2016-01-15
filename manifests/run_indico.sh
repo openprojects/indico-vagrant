@@ -6,7 +6,7 @@ cd /vagrant/opt
 source bin/activate 
 
 # Run Zeo
-sudo zdaemon -C /vagrant/opt/indico-src/etc/zdctl.conf restart
+zdaemon -C /vagrant/opt/indico-src/etc/zdctl.conf restart
 
 # Run Indico
-sudo indico runserver
+indico runserver

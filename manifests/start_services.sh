@@ -22,9 +22,9 @@ DPATH="etc/indico.conf"
 sed -i.bak "s/$OLD/$NEW/g" $DPATH
 
 # First time start Indico: Init Postgresql DB
-sudo zdaemon -C etc/zdctl.conf start
-sudo indico db prepare
-sudo zdaemon -C etc/zdctl.conf stop
+/vagrant/opt/bin/zdaemon -C etc/zdctl.conf start
+/vagrant/opt/bin/indico db prepare
+/vagrant/opt/bin/zdaemon -C etc/zdctl.conf stop
 
 
 # deactivate virtualenv
