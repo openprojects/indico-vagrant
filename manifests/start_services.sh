@@ -21,6 +21,9 @@ NEW="SecretKey = '$SECRET'"
 DPATH="etc/indico.conf"
 sed -i.bak "s/$OLD/$NEW/g" $DPATH
 
+# Give Vagrant user I/O permissions 
+sudo chown -R vagrant /opt/indico
+
 # First time start Indico: Init Postgresql DB
 /vagrant/opt/bin/zdaemon -C etc/zdctl.conf start
 /vagrant/opt/bin/indico db prepare
@@ -32,8 +35,7 @@ deactivate
 
 
 
-# Give Vagrant user I/O permissions 
-chown -R vagrant /opt/indico
+
 
 #cp /vagrant/apache_indico.conf /etc/httpd/conf.d/
 #service httpd restart
