@@ -2,6 +2,12 @@
 sudo systemctl stop firewalld
 sudo systemctl disable firewalld
 
+# Enable Postgresql to listen on all IP
+DPATH="/var/lib/pgsql/9.4/data/postgresql.conf"
+OLD="#listen_addresses = 'localhost'"
+NEW="listen_addresses = '*'"
+sed -i.bak "s/$OLD/$NEW/g" $DPATH
+
 # Start Postgresql
 sudo service postgresql-9.4 start
 sudo createuser -s root -U postgres
