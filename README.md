@@ -45,9 +45,11 @@ Open a new shell, cd into indico-vagrant folder and
 Start Indico
 -------------------
 
+As already said:
 ```
   $ vagrant ssh -c "/vagrant/opt/run_indico.sh"
 ```
+Indico will run in a VirtualEnv (/vagrant/opt).
 
 
 Stop/start vagrant VM
